@@ -1,0 +1,8 @@
+## IDE files
+.idea/
+## Packer artifacts
+packer_cache/
+output-virtualbox-iso/
+*.box
+# Vagrant files
+.vagrant/
