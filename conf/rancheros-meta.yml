@@ -1,3 +1,8 @@
+- 1.0.1:
+   url: https://releases.rancher.com/os/v1.0.1/rancheros.iso
+   checksums:
+    md5: 0c13ace5c4b2d18aca1337c2bddde568
+    sha256: 980ce147fbdd9bc4669c042347014ff1068d52fe4c258f3a3e660b1c5080277e
 - 1.0.0:
    url: https://releases.rancher.com/os/v1.0.0/rancheros.iso
    checksums:
