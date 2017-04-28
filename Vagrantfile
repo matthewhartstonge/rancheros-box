@@ -46,13 +46,15 @@ Vagrant.configure("2") do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  # config.vm.provider "virtualbox" do |vb|
-  #   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
-  #
-  #   # Customize the amount of memory on the VM:
-  #   vb.memory = "1024"
-  # end
+  config.vm.provider "virtualbox" do |vb|
+     vb.check_guest_additions = false
+     # If the host has a functional vboxsf filesystem
+     vb.functional_vboxsf = false
+     # Display the VirtualBox GUI when booting the machine
+     # vb.gui = true
+     # Customize the amount of memory on the VM:
+     vb.memory = "1024"
+  end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
@@ -75,4 +77,9 @@ Vagrant.configure("2") do |config|
   # SSH Configuration
   config.ssh.username = "rancher"
   config.ssh.keys_only = true
+
+  # Stop vagrant-vbguest installing Guest Additions
+  if Vagrant.has_plugin?("vagrant-vbguest")
+    config.vbguest.no_install = true
+  end
 end

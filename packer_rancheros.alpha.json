@@ -1,7 +1,7 @@
 {
   "variables": {
     "iso_md5_checksum": "0c13ace5c4b2d18aca1337c2bddde568",
-    "version_prerelease_suffix": "",
+    "version_prerelease_suffix": ".alpha1",
     "vm_description": "A simplified Linux distribution built from containers, for containers",
     "vm_version": "1.0.1"
   },
