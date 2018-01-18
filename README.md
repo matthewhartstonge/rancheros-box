@@ -1,6 +1,8 @@
 # RancherOS Box
 
-Seeks to keep up to date with RancherOS releases.
+Seeks to keep up to date with RancherOS releases. 
+
+*I am looking for a maintainer as I have moved to Kubernetes via minikube*
 
 The default SSH Key has been set up for `vagrant ssh` to allow hacking via the the shell script provisioner.
 
