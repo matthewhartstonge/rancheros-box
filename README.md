@@ -1,8 +1,6 @@
 # RancherOS Box
 
-Seeks to keep up to date with RancherOS releases. 
-
-*I am looking for a maintainer as I have moved to Kubernetes via minikube*
+## This project has been merged into and superseded by: https://github.com/chriswayg/rancheros-box 👌
 
 The default SSH Key has been set up for `vagrant ssh` to allow hacking via the the shell script provisioner.
 
